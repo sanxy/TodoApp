@@ -11,8 +11,8 @@ class DatabaseHelper {
 
   final String tableItem = "items";
   final String columnId = "id";
-  final String columnItemName= "itemname";
-  final String columnDateCreated = "datecreated";
+  final String columnItemName= "item_name";
+  final String columnDateCreated = "date_created";
 
   factory DatabaseHelper() {
     if (_instance == null) {

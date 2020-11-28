@@ -35,7 +35,7 @@ class _TodoScreenState extends State<TodoScreen> {
                     trailing: Listener(
                       key: Key(_itemsList[position].itemName),
                       child: Icon(
-                        Icons.remove_circle,
+                        Icons.delete,
                         color: Colors.redAccent,
                       ),
                       onPointerDown: (pointerEvent) => _deleteTodoItem(_itemsList[position].id, position)
@@ -51,7 +51,7 @@ class _TodoScreenState extends State<TodoScreen> {
           )
         ],
       ),
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.white10,
       floatingActionButton: FloatingActionButton(
         onPressed: _showFormDialog,
         child: Icon(Icons.add),
@@ -150,8 +150,8 @@ class _TodoScreenState extends State<TodoScreen> {
       actions: <Widget>[
         FlatButton(onPressed: () async{
           TodoItem updatedItem = TodoItem.fromMap({
-            'itemname' : _textEditingController.text,
-            'datecreated' : dateFormatted(),
+            'item_name' : _textEditingController.text,
+            'date_created' : dateFormatted(),
             'id' : item.id
           });
 

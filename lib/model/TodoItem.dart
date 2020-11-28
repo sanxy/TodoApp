@@ -8,8 +8,8 @@ class TodoItem extends StatelessWidget {
   TodoItem(this._itemName, this._dateCreated);
 
   TodoItem.map(dynamic obj) {
-    this._itemName = obj['itemname'];
-    this._dateCreated = obj['datecreated'];
+    this._itemName = obj['item_name'];
+    this._dateCreated = obj['date_created'];
     this._id = obj['id'];
   }
 
@@ -21,8 +21,8 @@ class TodoItem extends StatelessWidget {
 
   Map<String, dynamic> toMap() {
     var map = Map<String, dynamic>();
-    map['itemname'] = this._itemName;
-    map['datecreated'] = this._dateCreated;
+    map['item_name'] = this._itemName;
+    map['date_created'] = this._dateCreated;
 
     if (this._id != null) {
       map['id'] = this._id;
@@ -32,8 +32,8 @@ class TodoItem extends StatelessWidget {
 
   TodoItem.fromMap(Map<String, dynamic> map) {
     this._id = map['id'];
-    this._itemName = map['itemname'];
-    this._dateCreated = map['datecreated'];
+    this._itemName = map['item_name'];
+    this._dateCreated = map['date_created'];
   }
 
   @override

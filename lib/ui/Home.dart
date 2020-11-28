@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Todo App'),
-        backgroundColor: Colors.black54,
+        backgroundColor: Colors.indigoAccent,
       ),
       body: TodoScreen(),
     );

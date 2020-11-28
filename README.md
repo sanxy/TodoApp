@@ -27,8 +27,3 @@ A flutter todo application using internal storage to save data.
   
 </table>
 
-## Connect with me at
-
-- [Twitter](https://www.twitter.com/wsanxy)
-- [LinkedIn](https://www.linkedin.com/in/sanxy)
-- [Github](https://github.com/sanxy)

@@ -1,6 +1,11 @@
 # Todo App
 
 A flutter todo application using internal storage(sqflite) to save data.
+Functions:
+- Add new note
+- Update note
+- Delete note
+- list all notes
 
 ## Screenshots
 

@@ -1,6 +1,6 @@
 # Todo App
 
-A flutter todo application using internal storage to save data.
+A flutter todo application using internal storage(sqflite) to save data.
 
 ## Screenshots
 
